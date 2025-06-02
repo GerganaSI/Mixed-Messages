@@ -8,7 +8,7 @@ let generalLuck = ['Do not be afraid of competition.',
     "A routine task will turn into an enchanting adventure.",
     "Beware of all enterprises that require new clothes.",
     "Be true to your work, your word, and your friend.",
-    "Goodness is the only investment that never fails."];
+    ];
 
 
 let funnyLuck = ['A closed mouth gathers no feet.', 
@@ -23,3 +23,10 @@ let romanticLuck = ["Paradise is always where love dwells.",
 "In dreams and in love there are no impossibilities.",
 "Love isn't something you find. Love is something that finds you.",
 "True love is not something that comes everyday, follow your heart, it knows the right answer"];
+
+const generalLuckMessage = (arr) => {
+    let randomNumber = Math.floor(Math.random() * arr.length);
+    return `Your luck for the day is: ${arr[randomNumber]}`
+}
+
+console.log(generalLuckMessage(generalLuck));
