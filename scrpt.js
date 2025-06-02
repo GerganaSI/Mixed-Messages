@@ -34,5 +34,11 @@ const romanticLuckMessage = (arr) => {
     return `Feeling romantic?: ${arr[randomNumber]}`
 }
 
+const funnyLuckMessage = (arr) => {
+    let randomNumber = Math.floor(Math.random() * arr.length);
+    return `Here is sometning funny: ${arr[randomNumber]}`
+}
+
 console.log(generalLuckMessage(generalLuck));
 console.log(romanticLuckMessage(romanticLuck));
+console.log(funnyLuckMessage(funnyLuck));
